@@ -7,6 +7,7 @@ A Mac app that writes a live transcript of your online language lesson, on your 
 Requires macOS 26 or later on Apple Silicon.
 
 - Transcribes your microphone and the call app (Zoom, Chrome, Safari, Teams) with Apple's on-device speech recognition.
+- Optional study notes (summary, vocabulary, phrases, what to practise), written on your Mac by Apple Intelligence. Needs Apple Intelligence turned on.
 - No audio is recorded or saved, and nothing is uploaded. There's no account and no tracking.
 - Tell the other person before you start that you're making a transcript.
 
