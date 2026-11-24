@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lessons – live transcripts of language lessons, on your Mac</title>
+<meta name="description" content="A free Mac app that writes a live transcript of your online Spanish or English lesson, on-device. No audio is saved and nothing leaves your Mac.">
+<link rel="icon" href="icon.png">
+<style>
+  :root {
+    --bg: #fbf8f2; --fg: #1d1d1f; --muted: #5f5f66; --card: #ffffff; --line: #e6e0d6;
+    --orange: #f46b45; --blue: #2e73db; --btn: #2e73db; --btn-fg: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #18181a; --fg: #f2f2f4; --muted: #a3a3ab; --card: #232326; --line: #333338; --btn: #4a8af0; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 56px 16px 72px; }
+  header { text-align: center; }
+  header img { width: 128px; height: 128px; }
+  h1 { font-size: clamp(2.1rem, 6vw, 3rem); margin: 12px 0 4px; letter-spacing: -0.02em; }
+  .tag { font-size: 1.2rem; color: var(--muted); margin: 0 auto 28px; max-width: 560px; }
+  .download { display: inline-block; background: var(--btn); color: var(--btn-fg); text-decoration: none;
+              font-weight: 600; font-size: 1.1rem; padding: 14px 28px; border-radius: 12px; }
+  .download:hover { filter: brightness(1.08); }
+  .req { color: var(--muted); font-size: 0.95rem; margin-top: 10px; }
+  .chat { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 22px;
+          margin: 44px 0; display: flex; flex-direction: column; gap: 10px; }
+  .b { max-width: 78%; padding: 9px 14px; border-radius: 14px; }
+  .b small { display: block; font-size: 0.75rem; font-weight: 600; margin-bottom: 2px; }
+  .them { background: color-mix(in srgb, var(--orange) 14%, transparent); align-self: flex-start; }
+  .them small { color: var(--orange); }
+  .me { background: color-mix(in srgb, var(--blue) 14%, transparent); align-self: flex-end; text-align: right; }
+  .me small { color: var(--blue); }
+  .other { font-style: italic; color: var(--muted); }
+  .note { align-self: center; background: color-mix(in srgb, #f5c400 22%, transparent); padding: 5px 14px;
+          border-radius: 99px; font-size: 0.9rem; }
+  h2 { font-size: 1.5rem; margin: 48px 0 12px; letter-spacing: -0.01em; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; }
+  .card h3 { margin: 0 0 4px; font-size: 1.05rem; }
+  .card p { margin: 0; color: var(--muted); font-size: 0.97rem; }
+  .privacy { border-left: 4px solid var(--blue); }
+  ol li { margin-bottom: 8px; }
+  code { font: 0.9em ui-monospace, "SF Mono", Menlo, monospace; background: var(--card); border: 1px solid var(--line);
+         border-radius: 5px; padding: 1px 5px; }
+  footer { margin-top: 56px; color: var(--muted); font-size: 0.9rem; text-align: center; }
+  a { color: var(--blue); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="">
+    <h1>Lessons</h1>
+    <p class="tag">A live transcript of your online language lesson, written on your Mac while you talk. Spanish and English, mixed.</p>
+    <a class="download" href="https://github.com/edspressomartini/lessons/releases/latest/download/Lessons.dmg">Download for Mac</a>
+    <p class="req">Free · macOS 26 (Tahoe) or later · Apple Silicon (M1 or newer)</p>
+  </header>
+
+  <div class="chat" aria-label="Example transcript">
+    <div class="b them"><small>Profe · 12:04</small>Ayer fui al mercado y compré fruta. Es el pretérito indefinido.</div>
+    <div class="b them other"><small>Profe · 12:09</small>In English, that's the simple past.</div>
+    <div class="b me"><small>Yo · 12:14</small>El sábado fui a la playa con mis amigos.</div>
+    <div class="note">📝 12:20 · review fui / fue</div>
+    <div class="b me other"><small>Yo · 12:31</small>Sorry, how do you say "we had lunch"?</div>
+  </div>
+
+  <h2>What it does</h2>
+  <div class="grid">
+    <div class="card"><h3>Both sides of the call</h3><p>Your voice from your microphone, the other person's from Zoom, Chrome, Safari or Teams. Each line is labelled with who said it.</p></div>
+    <div class="card"><h3>Spanish and English together</h3><p>Two on-device recognisers listen at once and the transcript switches language mid-sentence. The other language is shown in italics.</p></div>
+    <div class="card"><h3>For students and teachers</h3><p>Choose whether you're the student or the teacher, and whether the lesson is mostly Spanish or mostly English.</p></div>
+    <div class="card"><h3>Notes as you go</h3><p>Type a note during the lesson and it's saved with the time. All your lessons are in one searchable library.</p></div>
+    <div class="card"><h3>Study notes with AI</h3><p>"Copy for AI" copies the transcript with a ready-made prompt. Paste it into any AI assistant for a summary, vocabulary, phrases and what to practise.</p></div>
+    <div class="card"><h3>Plain files</h3><p>Every lesson is saved as a Markdown file in a folder you choose. Open it in any app, keep it, back it up, or delete it.</p></div>
+  </div>
+
+  <h2>Privacy</h2>
+  <div class="card privacy">
+    <p><strong>Everything happens on your Mac.</strong> Speech is transcribed by Apple's on-device speech recognition. No audio is recorded or saved, only the text, and nothing is uploaded anywhere. There's no account and no tracking. The only network requests are macOS downloading its speech model once, and an optional once-a-day check for a newer version of the app on GitHub. You can turn that check off.</p>
+    <p style="margin-top:10px"><strong>Tell the other person</strong> before you start that you're making a transcript of the lesson.</p>
+  </div>
+
+  <h2>Getting started</h2>
+  <ol>
+    <li>Open <code>Lessons.dmg</code> and drag <strong>Lessons</strong> to <strong>Applications</strong>.</li>
+    <li>Open Lessons, choose your microphone, and say something to check the level meter.</li>
+    <li>Join your lesson in Zoom or the browser, then click <strong>Start</strong>.</li>
+    <li>The first time, macOS asks for permission:
+      <ul>
+        <li><strong>Microphone</strong>: so Lessons can hear you.</li>
+        <li><strong>Screen &amp; System Audio Recording</strong>: macOS uses this one permission for capturing another app's audio. Lessons captures only the call app's sound, never your screen. After you allow it, quit and reopen Lessons.</li>
+      </ul>
+      The first lesson in a language may take a moment while macOS downloads its speech model.
+    </li>
+    <li>Click <strong>Stop</strong> at the end. Lessons tidies up the transcript and saves it to your library.</li>
+  </ol>
+  <p>Tip: wear headphones. Lessons removes the faint leak of the call into a sensitive mic, but sound from your speakers would be transcribed twice.</p>
+
+  <footer>
+    Free for personal, non-commercial use. Not for resale or redistribution: please share this page rather than the file.
+    <a href="https://github.com/edspressomartini/lessons/blob/main/LICENSE">Licence</a> ·
+    <a href="https://github.com/edspressomartini/lessons/releases">All releases</a><br>
+    © 2026 Edward Martin. Made with Apple's own frameworks only.
+  </footer>
+</main>
+</body>
+</html>
